@@ -1,5 +1,5 @@
-###Пример 1
-[SOURCE](https://bitbucket.org/zosimovaa/skyeng-sql/src/master/skyeng.sql)
+### Пример 1
+[SOURCE](https://github.com/zosimovaa/skyeng---sql/blob/master/skyeng.sql)
 
 Написать SQL запрос, который найдёт все сессии, в течение которых пользователь делал домашнее задание перед уроком, то есть совершил последовательность действий:
 
