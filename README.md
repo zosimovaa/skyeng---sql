@@ -1,16 +1,18 @@
-### Пример 1
-[SOURCE](https://github.com/zosimovaa/skyeng---sql/blob/master/skyeng.sql)
+# Description
 
-Написать SQL запрос, который найдёт все сессии, в течение которых пользователь делал домашнее задание перед уроком, то есть совершил последовательность действий:
+Write an SQL query that will find all sessions during which the user did homework before the lesson, that is, he performed a sequence of actions:
 
-  * 0 или более раз заходил на любые страницы;
-  * **зашел на rooms.homework-showcase (раздел со списком домашних заданий)**;
-  * 0 или более раз заходил на любые страницы;
-  * **зашел на rooms.view.step.content (страница домашнего задания);**
-  * 0 или более раз заходил на любые страницы;
-  * **зашел на rooms.lesson.rev.step.content (страница урока с преподавателем);**
-  * 0 или более раз заходил на любые страницы.
+  * Visited any page 0 or more times;
+  * **зашел на rooms.homework-showcase (homework section)**;
+  * Visited any page 0 or more times;
+  * **зашел на rooms.view.step.content (homework page);**
+  * Visited any page 0 or more times;
+  * **зашел на rooms.lesson.rev.step.content (lesson page with teacher);**
+  * Visited any page 0 or more times;
 
-Сессией называется активность пользователя, в которой между последовательными действиями проходит менее одного часа. Сессия начинается в момент первого из этих действий и заканчивается через час после последнего из них.
+A session is a user activity in which less than one hour elapses between successive actions. The session starts at the moment of the first of these actions and ends one hour after the last of them.
 
-Результатом должна стать выгрузка сессий вида: <идентификатор-пользователя>,<дата-время начала сессии>,<дата-время окончания сессии>.
+The result should be an unloading of sessions of the form: <user-id>,<date-time of session start>,<date-time of session end>.
+
+# Links
+[Solution](https://github.com/zosimovaa/skyeng---sql/blob/master/skyeng.sql)
